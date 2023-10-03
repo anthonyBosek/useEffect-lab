@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Question({ question, onAnswered }) {
+const Question = ({ question, onAnswered }) => {
   const [timeRemaining, setTimeRemaining] = useState(10);
 
   // add useEffect code
@@ -27,6 +27,6 @@ function Question({ question, onAnswered }) {
       <h5>{timeRemaining} seconds remaining</h5>
     </>
   );
-}
+};
 
 export default Question;
